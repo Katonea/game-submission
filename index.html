@@ -27,8 +27,8 @@
   .card {
     background: linear-gradient(180deg, rgba(255,255,255,.04), rgba(255,255,255,0)) , var(--panel);
     border: 1px solid var(--line); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 14px;
-    border-top: 3px solid var(--c);
   }
+  .card::before { content: ""; display: block; width: 44px; height: 4px; border-radius: 4px; background: var(--c); }
   .card.k { --c: var(--a); } .card.z { --c: var(--b); }
   .tag { font-size: 12px; font-weight: 700; color: var(--c); letter-spacing: .06em; }
   .card h2 { margin: 0; font-size: 26px; line-height: 1.2; }
